@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBM Cork CoderDojo</title>
-    <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/globals.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css">
+    <script src="/scripts/hljs/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/">Home</a>
+            <a href="/" class="dojo-logo">
+                <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="">
+                CoderDojo @ IBM Cork
+            </a>
 
             <ul>
                 <a href="/about">About</a>
@@ -28,23 +36,27 @@
     </header>
     <aside class="mobile-nav">
         <ul>
+            <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <a href="/register">Register</a>
         </ul>
 
         <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-            <i class="fa fa-close"></i>
+            <i class="fa fa-times-circle"></i>
         </a>
 
     </aside>
     <main>
         <section id="landing">
-            <img src="https://placehold.co/600x400/png" alt="">
+            <img src="https://placehold.co/600x400/png" alt="" class="fullwidthImg">
             <h1>IBM Cork CoderDojo is a member of the CoderDojo movement!</h1>
 
             <p>
-                IBM Cork CoderDojo is an integral part of the global CoderDojo Foundation, dedicated to inspiring and enabling young minds to explore the world of coding and technology. As a local chapter, we are committed to fostering a vibrant and inclusive learning environment where young enthusiasts can develop their coding skills and unleash their creative potential.
+                IBM Cork CoderDojo is an integral part of the global CoderDojo Foundation, dedicated to inspiring and
+                enabling young minds to explore the world of coding and technology. As a local chapter, we are committed
+                to fostering a vibrant and inclusive learning environment where young enthusiasts can develop their
+                coding skills and unleash their creative potential.
             </p>
         </section>
 
@@ -53,7 +65,22 @@
             <h1>About CoderDojo</h1>
 
             <p>
-                CoderDojo is a global movement aimed at providing free, open, and inclusive programming clubs for young people, also known as "Dojos." These Dojos serve as spaces where young individuals, referred to as Ninjas, can learn to code, build projects, and explore the exciting realms of technology in a fun and collaborative setting. Founded on the principles of community, mentorship, and self-directed learning, CoderDojo empowers young minds to become creators and problem-solvers in the digital age.
+                CoderDojo is a global movement aimed at providing free, open, and inclusive programming clubs for young
+                people, also known as "Dojos." These Dojos serve as spaces where young individuals, referred to as
+                Ninjas, can learn to code, build projects, and explore the exciting realms of technology in a fun and
+                collaborative setting. Founded on the principles of community, mentorship, and self-directed learning,
+                CoderDojo empowers young minds to become creators and problem-solvers in the digital age.
+            </p>
+        </section>
+
+        <section>
+            <h1>Our mission</h1>
+
+            <p>At IBM Cork CoderDojo, our mission is to inspire and equip the next generation of innovators with the
+                skills and confidence needed to thrive in an ever-evolving technological landscape. Through hands-on
+                coding sessions, mentorship, and creative projects, we aim to cultivate a passion for technology and
+                instill a sense of curiosity that will drive our young participants toward exciting opportunities in the
+                world of STEM (Science, Technology, Engineering, and Mathematics).
             </p>
         </section>
     </main>
@@ -72,10 +99,10 @@
                 <span>Socials</span>
                 <ul>
                     <a href="https://twitter.com/ibmcorkdojo">
-                        <i class="fa fa-twitter-square"></i>
+                        <i class="fab fa-twitter-square"></i>
                     </a>
                     <a href="https://linkedin.com/company/ibmcorkdojo">
-                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:mail@ibmcorkdojo.ie">
                         <i class="fa fa-envelope"></i>
@@ -86,4 +113,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
