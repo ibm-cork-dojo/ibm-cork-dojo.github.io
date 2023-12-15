@@ -208,6 +208,7 @@ footer .quicklinks a {
 
 .fullwidthImg {
   width: 100%;
+  height: 500px;
   object-fit: contain;
 }
 
