@@ -276,6 +276,66 @@ footer .quicklinks a {
   background-color: var(--dimmed);
 }
 
+.contact-list {
+  margin-top: 6em;
+  list-style: none;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-list>li {
+  height: 70px;
+  width: max-content;
+  display: inline;
+  background-color: var(--legal);
+  font-size: 1.2em;
+  width: 340px;
+  text-align: center;
+  margin: 1em;
+}
+
+.contact-list>li>a,
+.contact-list>li>button {
+  font-size: 1em;
+  display: block;
+  color: white;
+  height: 70px;
+  width: 340px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list>li>a>svg {
+  margin-right: 4px;
+}
+
+.contact-list>li>button {
+  box-sizing: border-box;
+  outline: none;
+  background-color: var(--legal);
+  box-shadow: none;
+  border: none;
+}
+
+.notification {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: none;
+  width: 100dvw;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 900px) {
   header a {
     display: inline;
@@ -294,6 +354,10 @@ footer .quicklinks a {
     width: var(--tablet-width);
   }
 
+  main *:target {
+    background-color: #ff08;
+  }
+
   footer {
     height: var(--footer-size)
   }
@@ -310,6 +374,14 @@ footer .quicklinks a {
   footer .quicklinks>ul {
     width: 60%;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .notification {
+    margin: 0;
+    width: 400px;
+    /* right: 20px; */
+    left: unset;
+    bottom: var(--footer-size);
   }
 }
 

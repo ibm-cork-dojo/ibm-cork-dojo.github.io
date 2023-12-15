@@ -49,6 +49,26 @@
     </aside>
     <main>
 
+        <ul class="contact-list">
+            <h1>Reach out via email or Linkedin message</h1>
+            <li>
+                <a href="https://linkedin.com/in/">
+                    <i class="fab fa-linkedin"></i>
+                    Linkedin page
+                </a>
+            </li>
+            <li>
+                <a href="mailto:CorkIBM.ie@coderdojo.com">
+                    <i class="far fa-envelope"></i>
+                    Click to send an email
+                </a>
+            </li>
+            <li id="copy-to-clipboard">
+                <button onclick="copyToClipboard()">
+                    Click to copy email address to clipboard
+                </button>
+            </li>
+        </ul>
     </main>
     <footer>
         <div class="inner">
@@ -56,8 +76,7 @@
                 <ul>
                     <a href="/about">About</a>
                     <a href="/blog">Blog</a>
-                    <a href="/policies">Policies &amp; guidelines</a>
-                    <a href="/safeguarding">Safeguarding</a>
+                    <a href="/about/#safeguarding">Safeguarding</a>
                     <a href="/contact">Get in touch</a>
                 </ul>
             </nav>
@@ -70,14 +89,18 @@
                     <a href="https://linkedin.com/company/ibmcorkdojo">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:mail@ibmcorkdojo.ie">
+                    <a href="mailto:CorkIBM.ie@coderdojo.com">
                         <i class="fa fa-envelope"></i>
                     </a>
                 </ul>
             </nav>
         </div>
+        <aside class="notification">
+            <p>Copied to clipboard!</p>
+        </aside>
     </footer>
     <script src="/script.js"></script>
+    <script src="clipboard.js"></script>
 </body>
 
 </html>
